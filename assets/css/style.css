@@ -1193,3 +1193,16 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.btn{
+  background-color: #18d26e;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover{
+  background-color: green;
+}
