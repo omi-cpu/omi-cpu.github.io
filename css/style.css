@@ -560,6 +560,13 @@ footer {
         width: min(100% - 28px, var(--max-width));
     }
 
+    .divineconnection-image span {
+        display: block;
+        max-width: 150px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
     .nav-button {
         display: none;
     }
