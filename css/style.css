@@ -262,8 +262,11 @@ a {
 
 .divineconnection-image {
     background: #e0e4eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-
 .project-content {
     padding: 34px;
 }
@@ -1052,6 +1055,13 @@ footer {
 
     .screenshot-card img {
         max-width: 240px;
+    }
+
+    .divineconnection-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
 }
