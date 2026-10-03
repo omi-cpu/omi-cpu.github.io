@@ -19,8 +19,7 @@ html {
 }
 
 body {
-    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -183,7 +182,7 @@ a {
 }
 
 .hero-tags span {
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     padding: 6px 11px;
     font-size: 12px;
@@ -246,6 +245,7 @@ a {
     font-size: 38px;
     font-weight: 800;
     letter-spacing: -0.04em;
+    text-align: center;
 }
 
 .project-card:not(.featured) .project-image {
@@ -262,11 +262,8 @@ a {
 
 .divineconnection-image {
     background: #e0e4eb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
+
 .project-content {
     padding: 34px;
 }
@@ -513,101 +510,6 @@ footer {
 
 
 /* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 850px) {
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        padding: 80px 0;
-    }
-
-    .hero-grid,
-    .project-card.featured,
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-grid {
-        gap: 50px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card.featured {
-        grid-column: span 1;
-    }
-
-    .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section {
-        padding: 80px 0;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .container {
-        width: min(100% - 28px, var(--max-width));
-    }
-
-    .divineconnection-image span {
-        display: block;
-        max-width: 150px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-    .nav-button {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .hero-actions,
-    .contact-actions {
-        flex-direction: column;
-    }
-
-    .button {
-        width: 100%;
-    }
-
-    .process-grid,
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-highlights {
-        grid-template-columns: 1fr;
-    }
-
-    .education-item {
-        align-items: flex-start;
-        gap: 15px;
-        flex-direction: column;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px 0;
-    }
-}
-
-/* =========================
    CASE STUDIES
 ========================= */
 
@@ -662,7 +564,9 @@ footer {
 }
 
 
-/* Product Visual */
+/* =========================
+   CASE STUDY VISUAL
+========================= */
 
 .case-visual {
     padding-bottom: 100px;
@@ -684,7 +588,6 @@ footer {
 }
 
 
-/* Sections */
 /* =========================
    CASE STUDY SECTIONS
 ========================= */
@@ -697,20 +600,12 @@ footer {
     background: #eeeeeb;
 }
 
-/* =========================
-   CONTENT GRID
-========================= */
-
 .case-grid {
     display: grid;
     grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
     gap: 70px;
     align-items: start;
 }
-
-/* =========================
-   SECTION HEADINGS
-========================= */
 
 .case-grid h2,
 .case-section > .container > h2 {
@@ -720,10 +615,6 @@ footer {
     max-width: 700px;
     margin-bottom: 24px;
 }
-
-/* =========================
-   BODY TEXT
-========================= */
 
 .case-text {
     color: var(--muted);
@@ -739,53 +630,10 @@ footer {
     margin-top: 20px;
 }
 
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 900px) {
-    .case-section {
-        padding: 75px 0;
-    }
-
-    .case-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .case-grid h2,
-    .case-section > .container > h2 {
-        max-width: 100%;
-    }
-}
 
 /* =========================
-   MOBILE
+   ROLE
 ========================= */
-
-@media (max-width: 600px) {
-    .case-section {
-        padding: 60px 0;
-    }
-
-    .case-grid {
-        gap: 20px;
-    }
-
-    .case-grid h2,
-    .case-section > .container > h2 {
-        font-size: 38px;
-        line-height: 1.15;
-    }
-
-    .case-text {
-        font-size: 16px;
-        line-height: 1.75;
-    }
-}
-
-
-/* Role */
 
 .role-grid {
     display: grid;
@@ -818,7 +666,9 @@ footer {
 }
 
 
-/* Decision Cards */
+/* =========================
+   DECISION CARDS
+========================= */
 
 .decision-grid {
     display: grid;
@@ -842,7 +692,9 @@ footer {
 }
 
 
-/* User Flow */
+/* =========================
+   USER FLOW
+========================= */
 
 .flow {
     display: flex;
@@ -876,7 +728,9 @@ footer {
 }
 
 
-/* Validation */
+/* =========================
+   VALIDATION
+========================= */
 
 .validation-grid {
     display: grid;
@@ -894,7 +748,9 @@ footer {
 }
 
 
-/* Learning */
+/* =========================
+   LEARNING
+========================= */
 
 .learning-grid {
     display: grid;
@@ -919,7 +775,9 @@ footer {
 }
 
 
-/* Technology */
+/* =========================
+   TECHNOLOGY
+========================= */
 
 .case-tech {
     padding: 70px 0;
@@ -939,64 +797,6 @@ footer {
     font-size: 12px;
 }
 
-
-/* Mobile */
-
-@media (max-width: 850px) {
-
-    .case-meta {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .case-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .role-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .learning-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .case-hero {
-        padding: 70px 0 50px;
-    }
-
-    .case-hero h1 {
-        font-size: 60px;
-    }
-
-    .case-subtitle {
-        font-size: 18px;
-    }
-
-    .case-meta {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .product-showcase {
-        min-height: 350px;
-    }
-
-    .case-section {
-        padding: 75px 0;
-    }
-
-    .role-grid,
-    .decision-grid,
-    .validation-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
 
 /* =========================
    SCREENSHOT GRID
@@ -1032,7 +832,58 @@ footer {
    TABLET
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero-grid,
+    .project-card.featured,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-grid {
+        gap: 50px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card.featured {
+        grid-column: span 1;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .case-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .role-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
 
     .screenshot-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1041,7 +892,6 @@ footer {
     .screenshot-card img {
         max-width: 200px;
     }
-
 }
 
 
@@ -1050,6 +900,100 @@ footer {
 ========================= */
 
 @media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 28px, var(--max-width));
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero-actions,
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .process-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .education-item {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .divineconnection-image span {
+        max-width: 150px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .case-hero {
+        padding: 70px 0 50px;
+    }
+
+    .case-hero h1 {
+        font-size: 60px;
+    }
+
+    .case-subtitle {
+        font-size: 18px;
+    }
+
+    .case-meta {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-showcase {
+        min-height: 350px;
+    }
+
+    .case-section {
+        padding: 75px 0;
+    }
+
+    .case-grid {
+        gap: 20px;
+    }
+
+    .case-grid h2,
+    .case-section > .container > h2 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .case-text {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .role-grid,
+    .decision-grid,
+    .validation-grid {
+        grid-template-columns: 1fr;
+    }
 
     .screenshot-grid {
         grid-template-columns: 1fr;
@@ -1063,12 +1007,4 @@ footer {
     .screenshot-card img {
         max-width: 240px;
     }
-
-    .divineconnection-image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
 }
